@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+<link href="../resources/compsci_seminar4.css" rel="stylesheet" type="text/css" media="all">
+<link href="../resources/print.css" rel="stylesheet" type="text/css" media="print">
+<link href="../resources/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+<title>Computer Science Seminar</title>
+</head>
+
+<body>
+<!-- Begin Top Logo -->
+<div id="header">
+  <a href="http://www.swansea.ac.uk/"><img src="../resources/icon.png" alt="Swansea University" title="Visit the Swansea University home page" /></a>
+    <div><a href="http://www.swansea.ac.uk/compsci/">Computer Science</a></div>
+</div>
+<!-- End Top Logo -->
+
+<div class="rightcol">
+
+<h1>A domain-theoretic realization of the classical axiom of countable choice</h1>
+<h2>Ulrich Berger</h2>
+<p>Swansea University</p>
+<p>In JSL 63(2), Berardi, Bezem and Coquand proposed a realization PHI of the classical axiom of choice, that could be used to extract computational content from classical proofs. In order to prove correctness of PHI they introduced a rather ad-hoc and complicated notion of realizability based on an infinitary term system allowing to exploit PHI's intensional behavior. <br /><br />In the seminar I will give an alternative correctness proof in a purely extensional setting based on standard domain-theory, realizability and A-translation. I will concentrate on the technically somewhat simpler, but essentially equivalent problem of proving termination of the corresponding recursion. <br /><br />The problem is illustrated by the following little story: <br /><br />******************************************************************** <br /><br />Hackers on trial <br /><br />A group of hackers, H_1, H_2, H_3, ... (infinitely many in fact), is accused of some offense. <br /><br />The Professional Hacker's Investigation bureau, PHI, employs a panel, Y, questioning the hackers and deciding on how to penalize them. <br /><br />Of course, the panel Y can only question finitely many hackers, but which and how many of them, will depend on the hackers' answers. <br /><br />Together with the accusation the PHI office has received a record r = [(k1,a1),...,(kn,an)] saying that hacker H_ki has already given answer xi (i=1,...,n). <br /><br />It is possible that Y can make a judgment on the basis of the given record r alone. If not, Y needs to question some further hacker H_k (where k is different from all ki). <br /><br />H_k's answer will, of course, be the result of a hack: She breaks into PHI's computer system and sends faked requests to the PHI office for investigating the hackers with extended records of the form [(k1,x1),...,(kn,xn);
+
+INSERT INTO `seminar` VALUES (k,x)], where x is a possible answer. Based on PHI's reactions to these requests for various x, H_k will finally decide to give some answer. <br /><br />Of course, also H_k can send only finitely many faked requests, but which and how many she will send will depend on PHI's reactions. <br /><br />The question is: Will this trial ever end? <br /><br />Mathematically, the panel Y and the hackers H_k can be modeled as continuous functionals <br /><br />Y : [N -> A] -> P <br /><br />H_k : [A -> P] -> A <br /><br />where N = {1,2,3,...}, A is the type of possible answers given by hackers, and P is the type of possible penalties. The trial can now be described by the following recursive definition of a function <br /><br />PHI : R -> P <br /><br />where R is the type of records, that is, R = (N x A)^*. The definition of PHI reads <br /><br />PHI [(k1,x1),...,(kn,xn)] = <br /><br />Y ( lambda k if k = ki then xi else H_k ( lambda x PHI [(k1,x1),...,(kn,xn);
+
+INSERT INTO `seminar` VALUES (k,x)] ) endif )</p>
+<p><b>Thursday 11 Jul 2002</b></p>
+<p><b>Robert Recorde Room, Department of Computer Science, Swansea</b></p>
+
+  
+
+  <!-- InstanceEndEditable -->
+
+</div>
+
+
+<div class="leftcol">
+<!--<div class="menu">
+  <p>SERIES</p>
+  <ul>
+  <li><a href="seminars?date=2010-09-01">Departmental Colloquia Archive</a></li>
+  <li><a href="pcvseminars?date=today">Proof, Complexity, Verification</a></li>
+  <li><a href="algseminars?date=2012-09-01">Algebraic Specification</a></li>
+  <li><a href="deptseminars?date=2002-09-01">Departmental Seminar Archive</a></li>
+  </ul>
+</div>
+-->
+  	<div class="menu">
+<ul>
+	<li><a href="../years/1993-1994.html">1993-1994</a></li>
+	<li><a href="../years/1994-1995.html">1994-1995</a></li>
+	<li><a href="../years/1995-1996.html">1995-1996</a></li>
+	<li><a href="../years/1996-1997.html">1996-1997</a></li>
+	<li><a href="../years/1997-1998.html">1997-1998</a></li>
+	<li><a href="../years/1998-1999.html">1998-1999</a></li>
+	<li><a href="../years/1999-2000.html">1999-2000</a></li>
+	<li><a href="../years/2000-2001.html">2000-2001</a></li>
+	<li><a href="../years/2001-2002.html">2001-2002</a></li>
+	<li><a href="../years/2002-2003.html">2002-2003</a></li>
+	<li><a href="../years/2003-2004.html">2003-2004</a></li>
+	<li><a href="../years/2004-2005.html">2004-2005</a></li>
+	<li><a href="../years/2005-2006.html">2005-2006</a></li>
+	<li><a href="../years/2006-2007.html">2006-2007</a></li>
+	<li><a href="../years/2007-2008.html">2007-2008</a></li>
+	<li><a href="../years/2008-2009.html">2008-2009</a></li>
+	<li><a href="../years/2009-2010.html">2009-2010</a></li>
+	<li><a href="../years/2010-2011.html">2010-2011</a></li>
+	<li><a href="../years/2011-2012.html">2011-2012</a></li>
+	<li><a href="../years/2012-2013.html">2012-2013</a></li>
+	<li><a href="../years/2013-2014.html">2013-2014</a></li>
+	<li><a href="../years/2014-2015.html">2014-2015</a></li>
+	<li><a href="../years/2015-2016.html">2015-2016</a></li>
+	<li><a href="../years/2016-2017.html">2016-2017</a></li>
+</ul>
+
+	</div>
+
+  
+</div>
+
+</body>
+<!-- InstanceEnd --></html>

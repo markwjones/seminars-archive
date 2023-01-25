@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+<link href="../resources/compsci_seminar4.css" rel="stylesheet" type="text/css" media="all">
+<link href="../resources/print.css" rel="stylesheet" type="text/css" media="print">
+<link href="../resources/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+<title>Computer Science Seminar</title>
+</head>
+
+<body>
+<!-- Begin Top Logo -->
+<div id="header">
+  <a href="http://www.swansea.ac.uk/"><img src="../resources/icon.png" alt="Swansea University" title="Visit the Swansea University home page" /></a>
+    <div><a href="http://www.swansea.ac.uk/compsci/">Computer Science</a></div>
+</div>
+<!-- End Top Logo -->
+
+<div class="rightcol">
+
+<h1>CSP-CASL - A new Integration of Process Algebra and Algebraic Specification</h1>
+<h2><a href="http://www.informatik.uni-bremen.de/~roba">Markus Roggenbach</a></h2>
+<p><a href="http://www-compsci.swan.ac.uk/~csetzer/logic-server/bremen.html">Bremen</a></p>
+<p>CSP-CASL is a combination of the process algebra CSP and the algebraic specification language CASL following the paradigm `integrating a formalism for the concurrent aspects with algebraic specification of the static datatypes'. Its novel aspects are:<br /><br />   1. A process algebra is combined with the concept of loose specifications on the algebraic side. Thus, CSP-CASL is able to deal with data refinement/abstraction by restricting/extending the model class. Furthermore, CSP-CASL can express communication patterns depending on abstract data requirements.<br />   2. CSP-CASL has a two-step semantics. This gives rise to a notion of refinement which can be decomposed in terms of the respective refinements in CASL and CSP.<br />   3. Choosing a denotational semantics for CSP enables theorem proving for CSP. <br /><br />The last two points aim for the reuse of HOL-CSP and HOL-CASL as components for theorem proving support of CSP-CASL refinement.<br /><br />A CSP-CASL specification consists of a data part, which is essentially a structured CASL specification, and a process part, which consists of a (recursive) CSP process, where CASL terms are used to describe communications. As usual, the concept of communication via channels is added as `syntactic sugar': an optional channel part allows declaring (typed) channels. These declarations are translated into CASL datatypes, which provide the extra syntax needed for the CSP operations like sending or receiving data on a channel.<br /><br />The above described structure of a CSP-CASL specification is reflected by its two-step semantics: The first step determines a class of models for the data part by the standard CASL semantics. The second fixes one of the obtained models, additionally fixes one of the denotational semantics of CSP and gives a meaning to the process part. Here, all CASL terms, sorts, ... occuring in the process part are interpreted according to the fixed model of the data part. The second step is generic in the various denotational CSP semantics. The semantics of a whole CSP-CASL specification is the family of all these interpretations.<br /><br />A crucial point of the CSP-CASL semantics is how to define the communication alphabet for the CSP semantics relative to a given CASL model. While a CASL model provides a carrier set for each sort, the CSP semantics expects all communications to be collected in one set. As a first approximation CSP-CASL takes the disjoint sum of all carrier sets as communication alphabet. Preserving the typing leads to identical process behavior for isomorphic CASL models. To model CASL subsorting, an equivalence relation is defined on this disjoint sum. The technical problem here is that CASL equations fail to be transitive at the syntactical level. Finally, to deal with partiality a (typed) communication `undefined' is added: thus, definedness of communications is not treated as an external `well-formedness' condition but can be proven within CSP-CASL.<br /><br />The integration of CSP and CASL also provides interesting insights into both languages. Following the guideline that all kind of data arising in a CSP-CASL specification should be describable within CASL, CSP's replicated operators like<br />||_{i=1}^n P(i)<br /><br />are out of scope: CASL does not provide dependent types. In order to obtain `full CSP' in CSP-CASL, a CASL extension would be necessary. Another point is that loose CASL specifications naturally lead to infinite carrier sets. Thus, CSP hiding might give rise to a non-wellformed CSP-CASL specification as the choosen underlying CSP semantics such as the failures/divergences model deals only with finitely nondeterministic CSP.</p>
+<p><b>Tuesday 11 Feb 2003</b></p>
+<p><b>Robert Recorde Room, Department of Computer Science, Swansea</b></p>
+
+  
+
+  <!-- InstanceEndEditable -->
+
+</div>
+
+
+<div class="leftcol">
+<!--<div class="menu">
+  <p>SERIES</p>
+  <ul>
+  <li><a href="seminars?date=2010-09-01">Departmental Colloquia Archive</a></li>
+  <li><a href="pcvseminars?date=today">Proof, Complexity, Verification</a></li>
+  <li><a href="algseminars?date=2012-09-01">Algebraic Specification</a></li>
+  <li><a href="deptseminars?date=2002-09-01">Departmental Seminar Archive</a></li>
+  </ul>
+</div>
+-->
+  	<div class="menu">
+<ul>
+	<li><a href="../years/1993-1994.html">1993-1994</a></li>
+	<li><a href="../years/1994-1995.html">1994-1995</a></li>
+	<li><a href="../years/1995-1996.html">1995-1996</a></li>
+	<li><a href="../years/1996-1997.html">1996-1997</a></li>
+	<li><a href="../years/1997-1998.html">1997-1998</a></li>
+	<li><a href="../years/1998-1999.html">1998-1999</a></li>
+	<li><a href="../years/1999-2000.html">1999-2000</a></li>
+	<li><a href="../years/2000-2001.html">2000-2001</a></li>
+	<li><a href="../years/2001-2002.html">2001-2002</a></li>
+	<li><a href="../years/2002-2003.html">2002-2003</a></li>
+	<li><a href="../years/2003-2004.html">2003-2004</a></li>
+	<li><a href="../years/2004-2005.html">2004-2005</a></li>
+	<li><a href="../years/2005-2006.html">2005-2006</a></li>
+	<li><a href="../years/2006-2007.html">2006-2007</a></li>
+	<li><a href="../years/2007-2008.html">2007-2008</a></li>
+	<li><a href="../years/2008-2009.html">2008-2009</a></li>
+	<li><a href="../years/2009-2010.html">2009-2010</a></li>
+	<li><a href="../years/2010-2011.html">2010-2011</a></li>
+	<li><a href="../years/2011-2012.html">2011-2012</a></li>
+	<li><a href="../years/2012-2013.html">2012-2013</a></li>
+	<li><a href="../years/2013-2014.html">2013-2014</a></li>
+	<li><a href="../years/2014-2015.html">2014-2015</a></li>
+	<li><a href="../years/2015-2016.html">2015-2016</a></li>
+	<li><a href="../years/2016-2017.html">2016-2017</a></li>
+</ul>
+
+	</div>
+
+  
+</div>
+
+</body>
+<!-- InstanceEnd --></html>

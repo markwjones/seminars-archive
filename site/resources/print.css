@@ -1,0 +1,67 @@
+body {
+	width: auto;
+	margin: 0;
+}
+/* Hide certain unneeded elements on the page when printing */
+.leftcol, #contact, .search, #footer {
+	display: none;
+}
+#header {
+	background: #fff none;
+	color: #000;
+	width: 300px;
+	height: auto;
+}
+#header img {
+	margin: 0;
+}
+
+.main {
+	background: #fff none;
+	color: #000;
+
+}
+
+/* Menu is now hidden. No need to move article to the right hand side... */
+.rightcol {
+	float: none;
+	width: auto;
+	background-image: none;
+}	
+
+/* Reduce front page column widths, turn off backgrounds and column height
+   hacks for the sake of Opera when printing */
+.threecolswrapper div {
+	width: 220px;
+	margin-left: 5px;
+	margin-bottom: 0;
+}
+.threecolswrapper div.first {
+	margin-left: 0;
+}
+.threecolswrapper div a {
+	padding-bottom: 0;
+}
+.threecolswrapper div, .smallcolwrapper div a:visited {
+	background-color: #fff;
+	color: #000;
+}
+.threecolswrapper div h2 {
+	background: #fff none;
+	color: #000;
+}
+.threecolswrapper .bottom {
+	background: none;
+	background-color: #fff;
+	color: #000;
+}
+/* Try and center the columns when printing */
+.threecolswrapper {
+	width: 675px;
+	background: none;
+}
+/* Uncolour links/headings so they display as normal text and are easier to read */
+a, a:link, a:visited, h1, h2, h3, h4 {
+	background: #fff;
+	color: #000;
+}

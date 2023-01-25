@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+<link href="../resources/compsci_seminar4.css" rel="stylesheet" type="text/css" media="all">
+<link href="../resources/print.css" rel="stylesheet" type="text/css" media="print">
+<link href="../resources/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+<title>Computer Science Seminar</title>
+</head>
+
+<body>
+<!-- Begin Top Logo -->
+<div id="header">
+  <a href="http://www.swansea.ac.uk/"><img src="../resources/icon.png" alt="Swansea University" title="Visit the Swansea University home page" /></a>
+    <div><a href="http://www.swansea.ac.uk/compsci/">Computer Science</a></div>
+</div>
+<!-- End Top Logo -->
+
+<div class="rightcol">
+
+<h1>Propositional rewriting techniques for knowledge representation</h1>
+<h2><a href="http://www.dcs.bbk.ac.uk/staff/staffperson.php?name=igor">Igor Razgon</a></h2>
+<p><a href="http://www.dcs.bbk.ac.uk/">Birkbeck (University of London)</a></p>
+<p>The following scenario is common in knowledge representation. There is a knowledge base and types of queries to be answered. The requirement is that all these queries must be answered in a polynomial time. However, some queries are intractable (e.g. NP-complete to answer) in the given representation of the knowledge base. A possible solution is *rewriting*: the knowledge base is compiled into a different format where the queries can be answered efficiently. Of course the compilation may take a lot of time. However, it is performed *offline*, at the preprocessing stage and if the knowledge base is not changed over a *long* period of time, the time savings from the query answering will amply compensate the additional preprocessing time.<br /><br />The real difficulty of application of the above methodology is that the knowledge base resulting from the rewriting may become prohibitively large. Therefore the main effort of researchers is concentrated towards design of rewriting algorithms having a reasonable space complexity of their output.<br /><br />In this talk I will concentrate on the *propositional* rewriting also known as knowledge compilation. In the relevant scenario the initial format of the knowledge base is Conjunctive Normal Form (CNF) and a typical query is whether or not the given partial assignment to its variables can be extended to a satisfying assignment of this CNF.<br />This kind of query is called *clausal entailment* and it is clearly NP-complete since it is a generalization of the satisfiability testing, a classical NP-complete problem.<br /><br />The methodology of knowledge compilation is transformation of the input CNF into an equivalent *good* representation for which the clausal entailment query can be answered in a polynomial time. I will overview a number of such representations including: decision trees, ordered binary decision diagrams, free binary decision diagrams, decomposable negation normal forms. I will also overview the relationship between these representations, their advantages and disadvantages.<br /><br />In the final part of my talk I will intuitively overview an approach to obtain a space-efficient good representation from the initial CNF. This approach is based on the assumption that the CNF is associated with a natural parameter that is very small compared to the size of the CNF. The resulting representation is exponential in terms of this small parameter but polynomial in the input size.<br /></p>
+<p><b>Tuesday 04 Feb 2014</b></p>
+<p><b>Robert Recorde Room, Department of Computer Science, Swansea</b></p>
+
+  
+
+  <!-- InstanceEndEditable -->
+
+</div>
+
+
+<div class="leftcol">
+<!--<div class="menu">
+  <p>SERIES</p>
+  <ul>
+  <li><a href="seminars?date=2010-09-01">Departmental Colloquia Archive</a></li>
+  <li><a href="pcvseminars?date=today">Proof, Complexity, Verification</a></li>
+  <li><a href="algseminars?date=2012-09-01">Algebraic Specification</a></li>
+  <li><a href="deptseminars?date=2002-09-01">Departmental Seminar Archive</a></li>
+  </ul>
+</div>
+-->
+  	<div class="menu">
+<ul>
+	<li><a href="../years/1993-1994.html">1993-1994</a></li>
+	<li><a href="../years/1994-1995.html">1994-1995</a></li>
+	<li><a href="../years/1995-1996.html">1995-1996</a></li>
+	<li><a href="../years/1996-1997.html">1996-1997</a></li>
+	<li><a href="../years/1997-1998.html">1997-1998</a></li>
+	<li><a href="../years/1998-1999.html">1998-1999</a></li>
+	<li><a href="../years/1999-2000.html">1999-2000</a></li>
+	<li><a href="../years/2000-2001.html">2000-2001</a></li>
+	<li><a href="../years/2001-2002.html">2001-2002</a></li>
+	<li><a href="../years/2002-2003.html">2002-2003</a></li>
+	<li><a href="../years/2003-2004.html">2003-2004</a></li>
+	<li><a href="../years/2004-2005.html">2004-2005</a></li>
+	<li><a href="../years/2005-2006.html">2005-2006</a></li>
+	<li><a href="../years/2006-2007.html">2006-2007</a></li>
+	<li><a href="../years/2007-2008.html">2007-2008</a></li>
+	<li><a href="../years/2008-2009.html">2008-2009</a></li>
+	<li><a href="../years/2009-2010.html">2009-2010</a></li>
+	<li><a href="../years/2010-2011.html">2010-2011</a></li>
+	<li><a href="../years/2011-2012.html">2011-2012</a></li>
+	<li><a href="../years/2012-2013.html">2012-2013</a></li>
+	<li><a href="../years/2013-2014.html">2013-2014</a></li>
+	<li><a href="../years/2014-2015.html">2014-2015</a></li>
+	<li><a href="../years/2015-2016.html">2015-2016</a></li>
+	<li><a href="../years/2016-2017.html">2016-2017</a></li>
+</ul>
+
+	</div>
+
+  
+</div>
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------------------------------------------------------------------------------------------- GLOBAL SETTINGS ------- */
+
+html {
+	/* CSS3 property to always show vertical scrollbar and stop scrollbar jog */
+	overflow-y: scroll;
+}
+body {
+	background:#ffffff url(bg_landing_header.png) 0 0 repeat-x;
+	width: 960px;
+	margin: 0px auto;
+	padding: 0;
+	border: 0;
+	font-family: 'Lato', Arial, Helvetica, sans-serif;
+	/*font-size: 12px;*/
+	font-style: normal;
+	font-weight:400;
+}
+
+#header {
+	color: #000;
+	width: 990px;
+	height: 146px;
+
+}
+#header img {
+	float: left;
+	display: inline; /* IE6 double float hack */
+	margin: 0;
+}
+#header > div {
+	margin-top: 0;
+	margin-left: 200px;
+	padding-top: 60px;
+	/*font-size: 2em;*/
+	color: #fff;
+	font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+#header a {
+	text-decoration: none;
+}
+#header a:link {
+	color: #e9ebe7;
+}
+#header a:visited {
+	color: #e9ebe7; /*Change this for visited link colour - rest are to prevent menus showing up*/
+}
+#header a:hover {
+	color: #e9ebe7;
+	text-decoration: underline;
+}
+
+.leftcol {
+	float: left;
+	width: 200px;
+}
+.rightcol {
+	float: right;
+	width: 757px;
+	padding: 0px;
+	background-color: inherit;
+	color: #000;
+}
+
+li {
+	margin:0 0 10px 0;
+}
+
+.menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+
+.menu {
+	background: inherit;
+	color: #3A687D;
+	margin-top: 15px;
+}
+.menu li {
+	border-bottom: 1px solid #E0E0E0; /*this is the line between each button*/
+	padding: 0;
+	margin: 0;
+}
+.menu ul ul {
+	display: none;
+}
+
+
+.menu a {
+	display: block;
+	text-decoration: none;
+	background: inherit;
+	color: #3A687D;
+	font-style:normal;
+	height: 1%;
+	padding: 5px;
+	padding-bottom: 3px;
+}
+
+.menu a:hover, .menu a:focus {
+	background: #FFFFFF;
+}

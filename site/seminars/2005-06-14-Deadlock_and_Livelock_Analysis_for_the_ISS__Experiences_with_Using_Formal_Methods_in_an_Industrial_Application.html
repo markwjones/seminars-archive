@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+<link href="../resources/compsci_seminar4.css" rel="stylesheet" type="text/css" media="all">
+<link href="../resources/print.css" rel="stylesheet" type="text/css" media="print">
+<link href="../resources/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+<title>Computer Science Seminar</title>
+</head>
+
+<body>
+<!-- Begin Top Logo -->
+<div id="header">
+  <a href="http://www.swansea.ac.uk/"><img src="../resources/icon.png" alt="Swansea University" title="Visit the Swansea University home page" /></a>
+    <div><a href="http://www.swansea.ac.uk/compsci/">Computer Science</a></div>
+</div>
+<!-- End Top Logo -->
+
+<div class="rightcol">
+
+<h1>Deadlock and Livelock Analysis for the ISS - Experiences with Using Formal Methods in an Industrial Application</h1>
+<h2><a href="http://www.cpt.haw-hamburg.de/~buth/">Bettina Buth</a></h2>
+<p><a href="http://www.cpt.haw-hamburg.de/">Hamburg</a></p>
+<p>From 1995 till 1998 the Bremen Institute of Safe Systems (BISS) and Verified Systems International collaborated with Daimler-Chrysler Aerospace RI (now EADS Space Transportation) for the verification of critical aspects of the central computer of the Russian Module of the International Space Station (ISS). The FTC is a fault-tolerant computer system for controlling experiments as well as docking manouvers. The project objective was to define and perform a verification suite for the software layers implementing the avionics interface (AVI, MIL-STD 1553 bus) as well as the fault management layer (FML). The software consisted of about 11,000 lines of OCCAM code, which exhibits a high degree of concurrency. The verification objectives were to investigate problems predominantly related to the concurrency and the internal communication behaviour of the components. The use of OCCAM had introduced a new level of complexity not easily handled by conventional testing approaches.<br /><br />These comprise freedom of deadlock, freedom of livelock, correct implementation of voting algorithms, correct implementation of the Byzantine Agreement Protocol, performance properties depending on clock rates, Hardware-In-The-Loop tests for the overall system.<br /><br />The talk will focus on those aspects which were handled by using CSP and model checking as the basic approach. The general idea for the analysis of communication properties of OCCAM programs as proposed here is to exploit the fact that OCCAM channel communication can easily be modelled in CSP. The basic idea for both deadlock and livelock analysis performed in this project is to use FDR2 for model checking. After manually abstracting the OCCAM programs to CSP processes the systems still is too large for a direct approach using FDR2. Thus it is necessary to decompose the task and use other techniques for combining the results to obtain an overall result for the full system. Some of these techniques are tool supported, others currently are only performed unassisted.<br /><br />In 2002, it became necessary to re-verify properties of these software modules after they were adapted for the reuse within the Automatic Transport Vehicle ATV developed by EADS Space Transportation. For this purpose the models were adapted and the required checks performed. A side e ect of this analysis is an evaluation which of the software changes a ect the abstract models and in which way.<br /><br />The talk will discuss both the original work and the experiences of the re-verification.</p>
+<p><b>Tuesday 14 Jun 2005</b></p>
+<p><b>Esso Lecture Theatre, Department of Computer Science, Swansea</b></p>
+
+  
+
+  <!-- InstanceEndEditable -->
+
+</div>
+
+
+<div class="leftcol">
+<!--<div class="menu">
+  <p>SERIES</p>
+  <ul>
+  <li><a href="seminars?date=2010-09-01">Departmental Colloquia Archive</a></li>
+  <li><a href="pcvseminars?date=today">Proof, Complexity, Verification</a></li>
+  <li><a href="algseminars?date=2012-09-01">Algebraic Specification</a></li>
+  <li><a href="deptseminars?date=2002-09-01">Departmental Seminar Archive</a></li>
+  </ul>
+</div>
+-->
+  	<div class="menu">
+<ul>
+	<li><a href="../years/1993-1994.html">1993-1994</a></li>
+	<li><a href="../years/1994-1995.html">1994-1995</a></li>
+	<li><a href="../years/1995-1996.html">1995-1996</a></li>
+	<li><a href="../years/1996-1997.html">1996-1997</a></li>
+	<li><a href="../years/1997-1998.html">1997-1998</a></li>
+	<li><a href="../years/1998-1999.html">1998-1999</a></li>
+	<li><a href="../years/1999-2000.html">1999-2000</a></li>
+	<li><a href="../years/2000-2001.html">2000-2001</a></li>
+	<li><a href="../years/2001-2002.html">2001-2002</a></li>
+	<li><a href="../years/2002-2003.html">2002-2003</a></li>
+	<li><a href="../years/2003-2004.html">2003-2004</a></li>
+	<li><a href="../years/2004-2005.html">2004-2005</a></li>
+	<li><a href="../years/2005-2006.html">2005-2006</a></li>
+	<li><a href="../years/2006-2007.html">2006-2007</a></li>
+	<li><a href="../years/2007-2008.html">2007-2008</a></li>
+	<li><a href="../years/2008-2009.html">2008-2009</a></li>
+	<li><a href="../years/2009-2010.html">2009-2010</a></li>
+	<li><a href="../years/2010-2011.html">2010-2011</a></li>
+	<li><a href="../years/2011-2012.html">2011-2012</a></li>
+	<li><a href="../years/2012-2013.html">2012-2013</a></li>
+	<li><a href="../years/2013-2014.html">2013-2014</a></li>
+	<li><a href="../years/2014-2015.html">2014-2015</a></li>
+	<li><a href="../years/2015-2016.html">2015-2016</a></li>
+	<li><a href="../years/2016-2017.html">2016-2017</a></li>
+</ul>
+
+	</div>
+
+  
+</div>
+
+</body>
+<!-- InstanceEnd --></html>
